@@ -328,6 +328,17 @@
 						}
 					},
 					{
+						"name": "Paranoid - Reduce memory limit",
+						"description": "Paranoid - The standard memory limit should not be more than 32M, if you need more memory for a single script you can adjust that during runtime using ini_set()",
+						"level": "ERROR",
+						"test": {
+							"key": "memory_limit",
+							"operation": "smaller",
+							"value": "32M",
+							"context": ["paranoid"]
+						}
+					},
+					{
 						"name": "Turn off 'ASP tag' handling",
 						"description": "Old versions of PHP allowed for ASP-style tags (<% %>) instead of <?php. This should be disabled.",
 						"level": "WARNING",

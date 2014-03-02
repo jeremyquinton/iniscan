@@ -50,7 +50,7 @@ class ScanCommand extends Command
         }
 
         $context = ($context !== null)
-            ? explode(', ', $context) : array();
+            ? explode(', ', $context) : array('prod');
 
         // If we're not given a version, assume the current version
         if ($version === null) {
